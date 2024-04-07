@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.491fc067.css",
+    "main.js": "/static/js/main.f1d06f89.js",
+    "static/media/First-Vid.mp4": "/static/media/First-Vid.0af62016175edd8f6b3b.mp4",
+    "static/media/Professor2.jpg": "/static/media/Professor2.32c00561a919b3f12fe6.jpg",
+    "static/media/Login_2.jpg": "/static/media/Login_2.38b146e79c9bd15ecd83.jpg",
+    "static/media/Dashboard.jpg": "/static/media/Dashboard.b38724be023c04c50154.jpg",
+    "static/media/consultation.svg": "/static/media/consultation.ede9466b3634733f30c8d1a1b7bbe939.svg",
+    "static/media/register3.jpg": "/static/media/register3.15550cb6aaaec0de78a2.jpg",
+    "static/media/hosting.svg": "/static/media/hosting.b755d3eebb287dde8fcd287cb1d5653e.svg",
+    "static/media/app.svg": "/static/media/app.3d550d02d3409ad587451a91e97e78fb.svg",
+    "static/media/kws.png": "/static/media/kws.877da8110793af2c3d27.png",
+    "static/media/footer.svg": "/static/media/footer.f7b67a1234a7ce02c909.svg",
+    "static/media/web.svg": "/static/media/web.bceccecdef8e71bd5a8d73effe14fdba.svg",
+    "index.html": "/index.html",
+    "static/media/hero-bg.svg": "/static/media/hero-bg.2237f2b6be81c21a80a6.svg",
+    "main.491fc067.css.map": "/static/css/main.491fc067.css.map",
+    "main.f1d06f89.js.map": "/static/js/main.f1d06f89.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.491fc067.css",
+    "static/js/main.f1d06f89.js"
+  ]
+}
