@@ -5,7 +5,11 @@ const FormDataModel = require('./models/FormData');
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+    origin:["https://smart-ed.vercel.app"],
+    methods:["POST", "GET"],
+    credentials: true
+}));
 
 mongoose.connect('mongodb://localhost:27017/Login');
 
