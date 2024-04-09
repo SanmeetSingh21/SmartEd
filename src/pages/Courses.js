@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import pdf from '../images/CAM.pdf'; // Import the PDF file
 import NavBar from '../components/Navbar/NavBar';
 import Footer from '../components/Footer';
 
 const Courses = () => {
-    // Define your list of videos with titles and YouTube video IDs
+    // Define your list of videos with titles, YouTube video IDs, and PDF links
     const videos = [
-        { title: 'Java', videoId: 'xk4_1vDrzzo', description: 'Learn Java programming language from scratch.' },
-        { title: 'CAM', videoId: 'GRInNLx3Tug', description: 'Introduction to Computer Architecture and Microprocessor (CAM)' },
+        { title: 'Physics', videoId: 'DF8gKCPoS0c', description: 'Attenuation formula for optical fibres', pdfLink: 'link_to_pdf_1.pdf' },
+        { title: 'CAM', videoId: 'GRInNLx3Tug', description: 'Introduction to Computer Architecture and Microprocessor (CAM)', pdfLink: pdf }, // Use imported PDF file
         // Add more videos as needed
     ];
 
@@ -30,16 +31,28 @@ const Courses = () => {
                                             height="315" 
                                             src={`https://www.youtube.com/embed/${video.videoId}`} // Use videoId from the videos array
                                             title="YouTube video player" 
-                                            frameborder="0" 
+                                            frameBorder="0" 
                                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                                            allowfullscreen
+                                            allowFullScreen
                                         ></iframe>
                                         <div className="p-4">
                                             <h3 className="text-xl font-semibold text-gray-800">{video.title}</h3>
                                             <p className="text-gray-600">{video.description}</p>
+                                            {/* Add a link to the PDF below the video */}
+                                            <a href={video.pdfLink} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline">View PDF</a>
                                         </div>
                                     </div>
                                 ))}
+                            </div>
+                            {/* Heading for reference content support */}
+                            <div className="mt-8">
+                                <h1 className="text-4xl font-bold text-white mb-4">Reference Content Support</h1>
+                                {/* Links to articles */}
+                                <ul className="text-gray-300">
+                                    <li><a href="https://www.electricity-magnetism.org/attenuation-in-optical-fibres-formula/" target="_blank" rel="noopener noreferrer">Attenuation formula for optical fibres</a></li>
+                                    <li><a href="https://www.geeksforgeeks.org/introduction-to-8051-microcontroller/" target="_blank" rel="noopener noreferrer">8051 microcontroller</a></li>
+                                    {/* Add more links as needed */}
+                                </ul>
                             </div>
                         </div>
                     </div>

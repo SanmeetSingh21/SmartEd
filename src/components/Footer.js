@@ -10,7 +10,7 @@ const Footer = () => {
                         <Link to="/about" className="text-sm text-white mr-4">About</Link>
                         <Link to="/contactus" className="text-sm text-white">Contact Us</Link>
                     </div>
-                    <p className="text-sm text-white">&copy; 2024 SmartEd. All rights reserved. Coded with <span role="img" aria-label="heart">❤️</span></p>
+                    <p className="text-sm text-white">&copy; 2024 SmartEd.  All rights reserved.  Coded with <span role="img" aria-label="heart">❤️</span></p>
                 </div>
             </div>
         </footer>

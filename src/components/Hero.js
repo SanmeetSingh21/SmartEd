@@ -17,15 +17,13 @@ const Hero = () => {
                             <h1 className="mb-4 ml-24 md:text-5xl text-3xl font-bold text-white">
                                 Where Tradition Meets Technology
                             </h1>
-                            <div className="text-xl font-semibold tracking-tight mb-8 ml-24 text-gray-500">
+                            <div className="text-xl font-semibold tracking-tight mb-12 ml-24 text-gray-500">
                                 With our online courses, you can learn at your own pace, from
                                 anywhere in the world, and get access to personalised resources,
                                 including feedback from professors.
                             </div>
-                            {/* <div className="text-xl font-semibold tracking-tight mb-5 text-gray-500">
-                                The platform bridges the gap between students and professors, saving time by providing tailored courses aligned with students' curricula.
-                            </div> */}
-                            <div className="mb-4 space-x-0 md:space-x-2 md:mb-8 mt-0">
+                            
+                            <div className="mb-4 space-x-0 md:space-x-2 md:mb-12 mt-0">
                                 <Link to="/contact" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0" style={{ marginTop: '-50px' }}>
                                     Register
                                     <svg className="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">

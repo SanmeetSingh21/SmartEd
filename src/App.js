@@ -19,6 +19,7 @@ import Courses from './pages/Courses';
 import Uploader from './pages/Uploader';
 import ContactUs from './pages/ContactUs';
 import About from './components/About'
+import AdminPage from './pages/Admin';
 
 function App() {
   useEffect(() => {
@@ -52,6 +53,8 @@ function App() {
             <Route path="/uploader" element={<Uploader />} /> 
             <Route path="/contactus" element={<ContactUs />} /> 
             <Route path="/about" element={<About />} /> 
+            <Route path="/admin" element={<AdminPage />} /> 
+            
           </Routes>
         </ScrollToTop>
       </Router>

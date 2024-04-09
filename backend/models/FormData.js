@@ -7,17 +7,13 @@ const FormDataSchema = new mongoose.Schema({
     password: String
 });
 
-// Hash password before saving
 FormDataSchema.pre('save', async function(next) {
-    const user = this;
-    if (!user.isModified('password')) return next();
-
     try {
-        // Generate a salt
+        const user = this;
+        if (!user.isModified('password')) return next();
+
         const salt = await bcrypt.genSalt(10);
-        // Hash the password with the salt
         const hash = await bcrypt.hash(user.password, salt);
-        // Replace plain password with hashed password
         user.password = hash;
         next();
     } catch (error) {
